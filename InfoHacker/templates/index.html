@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Github Email Hacker</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+     <br>
+     <br>
+     <br>
+     <br>
+	<h2 align="center">Github Email Hacker</h2>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('hack')}}"method="post">
+
+        <div style="text-align:center; vertical-align:middel;"><input style="width:200px; height:15px;" type="text" name="experience" placeholder="Input Github Username" required="required"/></div>
+        <br>
+        <div style="text-align:center; vertical-align:middel;"><button type="submit" class="btn btn-primary btn-block btn-large">Hacking</button></div>
+    </form>
+   <br>
+   <h2 align="center"><font size="4" color="grey"> {{ user }}<br></font></h2>
+     <h2 align="center"><font size="4" color="grey"> {{ email }}<br></font></h2>
+
+
+ </div>
+
+
+</body>
+</html>
